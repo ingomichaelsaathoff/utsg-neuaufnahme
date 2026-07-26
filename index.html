@@ -320,6 +320,10 @@
         <label data-i18n="lbl_kind" for="f-kind">Name des Kindes</label>
         <input type="text" id="f-kind">
       </div>
+      <div class="form-group">
+        <label data-i18n="lbl_eltern" for="f-eltern">Name eines Elternteils</label>
+        <input type="text" id="f-eltern">
+      </div>
       <div class="form-row">
         <div class="form-group">
           <label data-i18n="lbl_tel" for="f-tel">Telefonnummer</label>
@@ -346,7 +350,7 @@
         <div class="step-number">4</div>
         <h2 data-i18n="step4_title">Spielerlaubnis</h2>
       </div>
-      <span class="badge brand" data-i18n="step4_badge">Nur für Punkt- &amp; Pflichtspiele</span>
+      <span class="badge brand" data-i18n="step4_badge">Für Punkt-, Freundschafts- und Pflichtspiele</span>
       <p data-i18n-html="step4_text1">
         Wer an Punkt- und Pflichtspielen teilnehmen möchte, braucht zusätzlich
         die <strong>Spielerlaubnis vom Hessischen Fußball-Verband (HFV)</strong>.
@@ -401,11 +405,12 @@
         bereit_label: "I'm generally willing to help – e.g. with transport or supporting training. The youth leadership will get in touch to work out the details.",
         lbl_tel: "Phone number",
         lbl_mail: "Email address",
+        lbl_eltern: "Parent's name",
         lbl_notiz: "Anything you'd like to share with us?",
         ph_notiz: "Wishes, skills, anything special (optional)",
         submit_btn: "Submit",
         step4_title: "Player Permit",
-        step4_badge: "Only for league & official matches",
+        step4_badge: "For league, friendly and official matches",
         step4_text1: "Anyone wanting to play in league and official matches also needs the <strong>player permit from the Hesse Football Association (HFV)</strong>. The application form cannot be completed online — it must be <strong>printed and filled in by hand (or in Word)</strong>.",
         step4_text2: "For minors, also required:",
         step4_item1: "a copy of the birth certificate",
@@ -433,11 +438,12 @@
         bereit_label: "Genel olarak yardımcı olmaya hazırım – örn. ulaşım veya antrenmanda destek ile. Gençlik yönetimi ayrıntıları konuşmak için sizinle iletişime geçecek.",
         lbl_tel: "Telefon numarası",
         lbl_mail: "E-posta adresi",
+        lbl_eltern: "Ebeveyn adı",
         lbl_notiz: "Bize iletmek istediğiniz bir şey var mı?",
         ph_notiz: "Dilekler, yetenekler, özel durumlar (isteğe bağlı)",
         submit_btn: "Gönder",
         step4_title: "Oyuncu Lisansı",
-        step4_badge: "Sadece lig ve resmi maçlar için",
+        step4_badge: "Lig, hazırlık ve resmi maçlar için",
         step4_text1: "Lig ve resmi maçlarda oynamak isteyenlerin ayrıca <strong>Hessen Futbol Federasyonu'ndan (HFV) oyuncu lisansı</strong> alması gerekir. Başvuru formu çevrimiçi doldurulamaz – <strong>yazdırılıp elle (veya Word ile) doldurulmalıdır</strong>.",
         step4_text2: "Reşit olmayanlar için ayrıca gereklidir:",
         step4_item1: "doğum belgesinin bir kopyası",
@@ -465,11 +471,12 @@
         bereit_label: "أنا مستعد بشكل عام للمساعدة - على سبيل المثال في النقل أو دعم التدريب. ستتواصل قيادة قسم الناشئين معكم لتنسيق التفاصيل.",
         lbl_tel: "رقم الهاتف",
         lbl_mail: "البريد الإلكتروني",
+        lbl_eltern: "اسم أحد الوالدين",
         lbl_notiz: "هل تودون إخبارنا بشيء؟",
         ph_notiz: "رغبات، مهارات، ملاحظات خاصة (اختياري)",
         submit_btn: "إرسال",
         step4_title: "إذن اللعب",
-        step4_badge: "فقط لمباريات الدوري والمباريات الرسمية",
+        step4_badge: "لمباريات الدوري والودية والرسمية",
         step4_text1: "من يرغب في المشاركة في مباريات الدوري والمباريات الرسمية يحتاج أيضًا إلى <strong>إذن اللعب من اتحاد كرة القدم في هيسن (HFV)</strong>. لا يمكن تعبئة نموذج الطلب عبر الإنترنت - يجب <strong>طباعته وتعبئته يدويًا (أو عبر Word)</strong>.",
         step4_text2: "بالنسبة للقاصرين، يُطلب إضافيًا:",
         step4_item1: "نسخة من شهادة الميلاد",
@@ -522,6 +529,7 @@
 
       const lines = [
         'Name des Kindes: ' + val('f-kind'),
+        'Name eines Elternteils: ' + val('f-eltern'),
         'Telefonnummer: ' + val('f-tel'),
         'E-Mail-Adresse: ' + val('f-mail'),
         '',
