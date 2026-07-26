@@ -284,21 +284,21 @@
     <div class="step-card">
       <div class="step-header">
         <div class="step-number">1</div>
-        <h2 data-i18n="step1_title">Team-Chat &amp; Termine</h2>
-      </div>
-      <span class="badge brand" data-i18n="step1_badge">Spond</span>
-      <p data-i18n="step1_text">Über Spond bekommt ihr alle Trainingszeiten, Spielansetzungen und Infos direkt vom Trainer aufs Handy.</p>
-      <a class="btn" href="https://spond.com/invite/YTTNJ" data-i18n="step1_btn">Team auf Spond beitreten</a>
-    </div>
-
-    <div class="step-card">
-      <div class="step-header">
-        <div class="step-number">2</div>
         <h2 data-i18n="step2_title">Vereinsanmeldung</h2>
       </div>
       <span class="badge gold" data-i18n="step2_badge">Digitall Pro</span>
       <p data-i18n="step2_text">Damit dein Kind offiziell spielberechtigt ist, braucht der Verein noch die Mitgliedsanmeldung. Das dauert nur wenige Minuten.</p>
       <a class="btn secondary" href="https://usinger-tsg.digitall-pro.com/digitall-pro/de/register" data-i18n="step2_btn">Jetzt im Verein anmelden</a>
+    </div>
+
+    <div class="step-card">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h2 data-i18n="step1_title">Team-Chat &amp; Termine</h2>
+      </div>
+      <span class="badge brand" data-i18n="step1_badge">Spond</span>
+      <p data-i18n="step1_text">Über Spond bekommt ihr alle Trainingszeiten, Spielansetzungen und Infos direkt vom Trainer aufs Handy.</p>
+      <a class="btn" href="https://spond.com/invite/YTTNJ" data-i18n="step1_btn">Team auf Spond beitreten</a>
     </div>
 
     <div class="step-card">
@@ -320,18 +320,6 @@
         <label data-i18n="lbl_kind" for="f-kind">Name des Kindes</label>
         <input type="text" id="f-kind">
       </div>
-      <div class="form-group">
-        <label data-i18n="lbl_team" for="f-team">Jahrgang / Mannschaft</label>
-        <input type="text" id="f-team">
-      </div>
-      <div class="form-group">
-        <label data-i18n="lbl_eltern" for="f-eltern">Name eines Elternteils</label>
-        <input type="text" id="f-eltern">
-      </div>
-      <div class="form-group">
-        <label data-i18n="lbl_beruf" for="f-beruf">Beruf</label>
-        <input type="text" id="f-beruf">
-      </div>
       <div class="form-row">
         <div class="form-group">
           <label data-i18n="lbl_tel" for="f-tel">Telefonnummer</label>
@@ -343,27 +331,11 @@
         </div>
       </div>
 
-      <p class="section-label" data-i18n="section_label">Wo kannst du unterstützen? (Mehrfachauswahl möglich)</p>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task1">Co-Trainer/in – Unterstützung beim Training 1×/Woche</span></label>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task2">Helfer/in beim Training (Auf-/Abbau, keine Vorerfahrung nötig)</span></label>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task3">Fahrdienste zu Auswärtsspielen organisieren</span></label>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task4">Helferdienste bei Heimspielen/Turnieren koordinieren</span></label>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task5">Spieltagsabwicklung (dfbnet, Schiedsrichterbetreuung)</span></label>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task6">Spond-Gruppe fürs Team betreuen (Termine einstellen)</span></label>
-      <label class="check-row"><input type="checkbox" class="task"> <span data-i18n="task7">Teamevents planen (Abschlussfeier, Ausflüge)</span></label>
-      <div class="form-group">
-        <label data-i18n="lbl_sonstiges" for="f-sonstiges">Ich bringe mich anderweitig ein:</label>
-        <input type="text" id="f-sonstiges" data-i18n-ph="ph_sonstiges" placeholder="Optional">
-      </div>
-
-      <div class="form-group">
-        <label data-i18n="lbl_zeit" for="f-zeit">Wann kannst du helfen?</label>
-        <input type="text" id="f-zeit" data-i18n-ph="ph_zeit" placeholder="z. B. Montag nach 17 Uhr, nur am Wochenende, flexibel">
-      </div>
+      <label class="check-row"><input type="checkbox" id="f-bereit"> <span data-i18n="bereit_label">Ich bin grundsätzlich bereit, mitzuhelfen – z. B. bei Fahrdiensten oder Unterstützung beim Training. Die Jugendleitung meldet sich, um Genaueres abzustimmen.</span></label>
 
       <div class="form-group">
         <label data-i18n="lbl_notiz" for="f-notiz">Möchtest du uns etwas mitgeben?</label>
-        <textarea id="f-notiz" rows="3" data-i18n-ph="ph_notiz" placeholder="Wünsche, Fähigkeiten, Besonderheiten (optional)"></textarea>
+        <textarea id="f-notiz" rows="2" data-i18n-ph="ph_notiz" placeholder="Wünsche, Fähigkeiten, Besonderheiten (optional)"></textarea>
       </div>
 
       <a class="btn" id="submit-engagement" href="#" data-i18n="submit_btn">Angaben absenden</a>
@@ -426,23 +398,9 @@
         step3_title: "Parent Involvement",
         step3_text: "UTSG is a <strong>registered, non-profit club</strong> – not a commercial provider. There is no paid staff for transport, matchday organisation or supervision: the entire program is run by volunteer coaches and parents. To make this work reliably for every child, we ask every family for a small, voluntary contribution – organisational, communicative or sporting, whatever suits you best.",
         lbl_kind: "Child's name",
-        lbl_team: "Age group / team",
-        lbl_eltern: "Parent's name",
-        lbl_beruf: "Occupation",
+        bereit_label: "I'm generally willing to help – e.g. with transport or supporting training. The youth leadership will get in touch to work out the details.",
         lbl_tel: "Phone number",
         lbl_mail: "Email address",
-        section_label: "Where can you help? (multiple selection possible)",
-        task1: "Assistant coach – support at training 1x/week",
-        task2: "Training helper (setup/teardown, no experience needed)",
-        task3: "Organise transport to away games",
-        task4: "Coordinate helpers at home games/tournaments",
-        task5: "Matchday organisation (dfbnet, referee support)",
-        task6: "Manage the team's Spond group (set schedule)",
-        task7: "Plan team events (end-of-season party, outings)",
-        lbl_sonstiges: "I'd like to help in another way:",
-        ph_sonstiges: "Optional",
-        lbl_zeit: "When are you available?",
-        ph_zeit: "e.g. Monday after 5pm, weekends only, flexible",
         lbl_notiz: "Anything you'd like to share with us?",
         ph_notiz: "Wishes, skills, anything special (optional)",
         submit_btn: "Submit",
@@ -472,23 +430,9 @@
         step3_title: "Ebeveyn Katkısı",
         step3_text: "UTSG <strong>tescilli, kâr amacı gütmeyen bir dernektir</strong> – ticari bir sağlayıcı değildir. Ulaşım, maç günü organizasyonu veya gözetim için ücretli personel yoktur: tüm faaliyetler gönüllü antrenörler ve ebeveynler tarafından yürütülür. Bunun her çocuk için güvenilir şekilde işlemesi için her aileden küçük, gönüllü bir katkı rica ediyoruz – organizasyonel, iletişimsel veya sportif, size en uygun olan şekilde.",
         lbl_kind: "Çocuğun adı",
-        lbl_team: "Yaş grubu / Takım",
-        lbl_eltern: "Ebeveyn adı",
-        lbl_beruf: "Meslek",
+        bereit_label: "Genel olarak yardımcı olmaya hazırım – örn. ulaşım veya antrenmanda destek ile. Gençlik yönetimi ayrıntıları konuşmak için sizinle iletişime geçecek.",
         lbl_tel: "Telefon numarası",
         lbl_mail: "E-posta adresi",
-        section_label: "Nerede destek olabilirsiniz? (Birden fazla seçim yapılabilir)",
-        task1: "Yardımcı antrenör – haftada 1 kez antrenmanda destek",
-        task2: "Antrenmanda yardımcı (kurulum/toplama, deneyim gerekmez)",
-        task3: "Deplasman maçlarına ulaşım organizasyonu",
-        task4: "Ev sahibi maçlarda/turnuvalarda yardımcı koordinasyonu",
-        task5: "Maç günü organizasyonu (dfbnet, hakem desteği)",
-        task6: "Takımın Spond grubunu yönetme (program girme)",
-        task7: "Takım etkinlikleri planlama (sezon sonu partisi, geziler)",
-        lbl_sonstiges: "Başka şekilde katkıda bulunmak istiyorum:",
-        ph_sonstiges: "İsteğe bağlı",
-        lbl_zeit: "Ne zaman yardımcı olabilirsiniz?",
-        ph_zeit: "örn. Pazartesi saat 17'den sonra, sadece hafta sonları, esnek",
         lbl_notiz: "Bize iletmek istediğiniz bir şey var mı?",
         ph_notiz: "Dilekler, yetenekler, özel durumlar (isteğe bağlı)",
         submit_btn: "Gönder",
@@ -518,23 +462,9 @@
         step3_title: "مساهمة الأهل",
         step3_text: "UTSG هو <strong>نادٍ مسجل وغير هادف للربح</strong> - وليس مزودًا تجاريًا. لا يوجد موظفون مدفوعون للنقل أو تنظيم أيام المباريات أو الإشراف: يتم تسيير كامل النشاط من قبل مدربين وأهالٍ متطوعين. لكي يعمل هذا بشكل موثوق لكل طفل، نطلب من كل عائلة مساهمة صغيرة وطوعية - تنظيمية أو تواصلية أو رياضية، وفق ما يناسبكم.",
         lbl_kind: "اسم الطفل",
-        lbl_team: "الفئة العمرية / الفريق",
-        lbl_eltern: "اسم أحد الوالدين",
-        lbl_beruf: "المهنة",
+        bereit_label: "أنا مستعد بشكل عام للمساعدة - على سبيل المثال في النقل أو دعم التدريب. ستتواصل قيادة قسم الناشئين معكم لتنسيق التفاصيل.",
         lbl_tel: "رقم الهاتف",
         lbl_mail: "البريد الإلكتروني",
-        section_label: "أين يمكنكم المساعدة؟ (يمكن اختيار أكثر من خيار)",
-        task1: "مساعد مدرب - دعم في التدريب مرة واحدة أسبوعيًا",
-        task2: "مساعد في التدريب (التجهيز/التفكيك، لا حاجة لخبرة)",
-        task3: "تنظيم النقل إلى مباريات خارج الديار",
-        task4: "تنسيق المساعدين في المباريات المضيفة/البطولات",
-        task5: "تنظيم يوم المباراة (dfbnet، دعم الحكام)",
-        task6: "إدارة مجموعة الفريق على Spond (إدخال المواعيد)",
-        task7: "التخطيط لفعاليات الفريق (حفلة نهاية الموسم، الرحلات)",
-        lbl_sonstiges: "أرغب بالمساهمة بطريقة أخرى:",
-        ph_sonstiges: "اختياري",
-        lbl_zeit: "متى يمكنكم المساعدة؟",
-        ph_zeit: "مثال: الاثنين بعد الساعة 17، عطلة نهاية الأسبوع فقط، مرن",
         lbl_notiz: "هل تودون إخبارنا بشيء؟",
         ph_notiz: "رغبات، مهارات، ملاحظات خاصة (اختياري)",
         submit_btn: "إرسال",
@@ -588,22 +518,14 @@
     document.getElementById('submit-engagement').addEventListener('click', function (e) {
       e.preventDefault();
       const val = id => document.getElementById(id).value.trim();
-      const tasks = Array.from(document.querySelectorAll('.task:checked'))
-        .map(cb => cb.parentElement.textContent.trim());
+      const bereit = document.getElementById('f-bereit').checked;
 
       const lines = [
         'Name des Kindes: ' + val('f-kind'),
-        'Jahrgang / Mannschaft: ' + val('f-team'),
-        'Name eines Elternteils: ' + val('f-eltern'),
-        'Beruf: ' + val('f-beruf'),
         'Telefonnummer: ' + val('f-tel'),
         'E-Mail-Adresse: ' + val('f-mail'),
         '',
-        'Unterstützung bei:',
-        tasks.length ? tasks.map(t => '- ' + t).join('\n') : '- (keine Auswahl)',
-        val('f-sonstiges') ? ('- Sonstiges: ' + val('f-sonstiges')) : '',
-        '',
-        'Verfügbarkeit: ' + val('f-zeit'),
+        'Grundsätzlich bereit mitzuhelfen: ' + (bereit ? 'Ja' : 'Nein'),
         '',
         'Anmerkungen: ' + val('f-notiz')
       ].filter(Boolean).join('\n');
